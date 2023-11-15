@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\aspdotnett\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj": {}
+    "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\peojectfbackend\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\aspdotnett\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj": {
+    "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\peojectfbackend\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\aspdotnett\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj",
+        "projectUniqueName": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\peojectfbackend\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj",
         "projectName": "Class20AirProCodeFTry",
-        "projectPath": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\aspdotnett\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj",
+        "projectPath": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\peojectfbackend\\Class20AirProCodeFTry\\Class20AirProCodeFTry.csproj",
         "packagesPath": "C:\\Users\\slakhote\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\aspdotnett\\Class20AirProCodeFTry\\obj\\",
+        "outputPath": "C:\\Users\\slakhote\\OneDrive - Huron Consulting Group\\Desktop\\codes\\peojectfbackend\\Class20AirProCodeFTry\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\slakhote\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -61,6 +65,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.23, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

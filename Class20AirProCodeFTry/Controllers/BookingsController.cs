@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Class20AirProCodeFTry.Models;
 using Class20AirProCodeFTry.BokRepo;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Class20AirProCodeFTry.Controllers
 {
     [Route("api/[controller]")]
+    
     [ApiController]
     public class BookingsController : ControllerBase
     {
@@ -25,10 +28,25 @@ namespace Class20AirProCodeFTry.Controllers
             return await _repository.GetBookings();
 
         }
+        //[Authorize]
         [HttpPost]
         public async Task<ActionResult<Booking>> PostBookings(Booking booking)
         {
-            return await _repository.PostBookings(booking);
+            try
+            {
+                /*var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var token = HttpContext.Request.Headers["Authorization"];*/
+                
+
+                // Log or debug userId to check if it's correctly extracted from the token.
+
+                return await _repository.PostBookings(booking);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception for further investigation.
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
+            }
         }
         [HttpPut]
         public async Task<ActionResult<Booking>> PutBookings(Booking booking)

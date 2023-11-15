@@ -47,6 +47,20 @@ namespace Class20AirProCodeFTry.Controllers
                 return NotFound();
             }
         }
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> Login(string username, string password)
+        {
+            
+            
+                return await _repository.Login(username, password);
+            
+            
+        }
+        [HttpPost("admin/login")]
+        public async Task<ActionResult<User>> CheckAdminLogin(string username, string password)
+        {
+            return await _repository.CheckAdminLogin(username, password);
+        }
     }
 }
 

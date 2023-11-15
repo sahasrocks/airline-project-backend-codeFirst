@@ -9,5 +9,7 @@ namespace Class20AirProCodeFTry.UsrRepo
         Task<ActionResult<User>> PostUsers(User user);
         Task<ActionResult<User>> PutUsers(User user);
         Task<ActionResult<User>> DeleteUsers(string id);
+        Task<ActionResult<User>> Login(string username,string password);
+        Task<ActionResult<User>> CheckAdminLogin(string username, string password);
     }
 }
