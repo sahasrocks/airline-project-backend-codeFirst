@@ -37,6 +37,15 @@ namespace Class20AirProCodeFTry.BokRepo
             await _context.SaveChangesAsync();
             return booking;
         }
+        /*public async Task<ActionResult<IEnumerable<Booking>>> GetBookingsByUserId(string userId)
+        {
+            return await _context.Bookings
+                .Include(c => c.User)
+                .Include(c => c.Flight)
+                .Where(b => b.UserId == userId)
+                .ToListAsync();
+        }*/
+
         public async Task<ActionResult<Booking>> DeleteBookings(int id)
         {
             var regBooking = await _context.Bookings.FindAsync(id);

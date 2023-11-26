@@ -9,5 +9,6 @@ namespace Class20AirProCodeFTry.BokRepo
         Task<ActionResult<Booking>> PostBookings(Booking booking);
         Task<ActionResult<Booking>> PutBookings(Booking booking);
         Task<ActionResult<Booking>> DeleteBookings(int id);
+        //Task<ActionResult<IEnumerable<Booking>>> GetBookingsByUserId(string userId);
     }
 }

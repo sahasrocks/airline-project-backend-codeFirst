@@ -14,6 +14,7 @@ namespace Class20AirProCodeFTry.Controllers
 {
     [Route("api/[controller]")]
     
+    
     [ApiController]
     public class BookingsController : ControllerBase
     {
@@ -53,6 +54,11 @@ namespace Class20AirProCodeFTry.Controllers
         {
             return await _repository.PutBookings(booking);
         }
+        /*[HttpGet]
+        public async  Task<ActionResult<IEnumerable<Booking>>> GetBookingsByUserId(string userId)
+        {
+            return await _repository.GetBookingsByUserId(userId);
+        }*/
         [HttpDelete("{id}")]
         public async Task<ActionResult<Booking>> DeleteBookings(int id)
         {
